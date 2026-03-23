@@ -1,0 +1,15 @@
+meta {
+  name: Get All Recette
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api-savon/v1/recette/all
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSdWV0YXNpbGl0dSIsInJvbGUiOiJST0xFX1VUSUxJU0FURVVSIiwiaWF0IjoxNzczNDk0Mjg3LCJleHAiOjE3NzM0OTc4ODd9.fXTa65Ogi_HdbyoKgtCoZEcBvWpdrNuUZPYaAMaLSUE
+}
