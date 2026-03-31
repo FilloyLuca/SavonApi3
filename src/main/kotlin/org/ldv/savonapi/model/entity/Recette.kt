@@ -128,5 +128,4 @@ class Recette(
         val apportEau = this.qteAlcalin * concentrationEau
         this.apportEnEau = apportEau
     }
-
 }
