@@ -28,6 +28,10 @@ class JwtAuthenticationFilter(
         val username = jwtService.extractUsername(token)
         val role = jwtService.extractClaim(token)
 
+        // ← Ajoute ces 2 lignes :
+        println("DEBUG username: $username")
+        println("DEBUG role: $role")
+
         val auth = UsernamePasswordAuthenticationToken(
             username,
             null,

@@ -102,6 +102,8 @@ class Recette(
      **/
     fun calculQteAlcalin() {
 
+        if (concentrationAlcalin <= 0) return
+
         var qteAlcalinNormal = 0.0
         if (this.avecSoude) {
             qteAlcalinNormal = this.getListCorpsGras().sumOf { (it.quantite * it.ingredient!!.sapo) * (40.0 / 56 / 1000) }
